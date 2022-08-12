@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React from "react";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <button className="btn btn-primary m-3">Add</button>
+      <table className="table mx-3">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </React.Fragment>
   );
 }
 
